@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  api:
+    build: .
+    working_dir: /home
+    tty: true
+    volumes:
+      - "./:/home"
+    ports:
+      - "3000:3000"
+    command: "node"
